@@ -1,2 +1,3 @@
+console.log(document.getElementsByTagName("ul"));
+console.log(document.querySelectorAll("ul"));
 
-my JS file
