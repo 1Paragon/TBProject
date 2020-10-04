@@ -1,27 +1,17 @@
+   
+   * {
+     background-color: #558562;
+}
+  .body {
+      font-size: 16px;
+      font-family:  
 
-font-family: Share; {
+  }
+#title {
+    color: goldenrod;
+    font-size: 30px;
 }
-#id=center;
-div {
-font-color: gold;    
-border: 1px black;
-}
-h1,h3
-{
- 
- color: olive;
- 
-
- }
-h1
-}
-font-size:26;
-}
-h3
-}
-font-size:16;
-}
- .hamburger {
+.hamburger {
     ul { 
         list-style-type: none; 
         margin: 0; 
@@ -33,27 +23,23 @@ font-size:16;
         overflow: hidden; 
     } 
       
-    li a { 
+      .hamburger { 
         display: block; 
-        color: rgb(170, 168, 52); 
-        padding: 8px 16px; 
+        color: rgb(189, 187, 63); 
+        padding: 5px 10px; 
         text-decoration: none; 
+        text-justify: left;
     } 
       
-    .hme { 
-        background-color: #558562;    
- }
-
-
- .mainphoto {
-     width: auto;
-     text-align:center;
-     padding:5px;
-      }
-      #riverimage {
-          width: 100%;
-          height:100%;
-          object-fit: contain;
-      }
+      div.mainphoto {
+        width: auto;
+        text-align:center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-color: rgb(220, 223, 72)
+        background-image:
+        url("C:/Users/Newuser/Desktop/PhotosforProject2020/photosfinal/riveredge.jpg"); 
+        background-color: transparent;
+        background-size: contain;
+        }
 
       
