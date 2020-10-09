@@ -1,13 +1,15 @@
 .body {
    background-color: #5c8a68;
    font-family: Arial, Helvetica, sans-serif;
-   font-color: rgb(220, 223, 72)
+   color: rgb(220, 223, 72)
    font-size: 16px;
    text-align: center;
    }
+
    #title {
-    font-color:rgb(80, 29, 29)
+    color:rgb(80, 29, 29);
   }
+
 .header {
     color: goldenrod;
     font-size: 30px;
@@ -32,24 +34,22 @@
 
       #mainphoto {
         width: auto;
-        height: 20vw;
+        height: 100vw;
         text-align:center;
         background-image:
-        <img src=https://github.com/1Paragon/TBProject/blob/master/MyProject/Mypictures/river%20edge%20.jpg?raw=true" alt=photo of a river's edge>
+        url("C:/Users/Newuser/Desktop/PhotosforProject2020/photosfinal/riveredge.jpg?raw=true");
+
         background-size: contain;
         font-weight: bold;
-          {
-         .h2
-         }
-         .h3
-        }
+      }
+
+
     .About {
       font-weight: bold;
       align-content: center;
       text-justify: left;
     }
-     .h3 {
-       }
+
 
 
 
