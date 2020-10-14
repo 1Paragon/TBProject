@@ -1,3 +1,9 @@
+import * as views from "./views";
+
+export default st => `
+${views[st.view](st)}
+`;
+
 export default() => `${<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -12,19 +18,21 @@ export default() => `${<!DOCTYPE html>
   </head>
   <body>
     <header>
-      <h1>Example SPA</h1>
+      <h1>Helping form future tech leaders</h1>
     </header>
     <nav>
       <i class="fas fa-bars"></i>
       <ul class="hidden--mobile nav-links">
+     //amend from views
         <li><a href="bio.html">Bio</a></li>
         <li><a href= "gallery.html">Gallery</a></li>
         <li><a href="register.html">Register</a></li>
       </ul>
     </nav>
     <section id="jumbotron">
-      <h2>Savvy Coders Jan. 2020 Cohort</h2>
-      <a href="">"Call to Action" "Button"</a>
+      <h3>Supporting youth as they utilize technology
+      <br>to navigate our ever changing world</h3>
+        <a href="">"JOIN US" "Button"</a>
     </section>
     <footer>
       &copy; 2020 <a href="https://savvycoders.com/">Savvy Coders</a>
