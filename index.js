@@ -1,3 +1,7 @@
+const express = require("express");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
 //Add event listeners here after rendering
