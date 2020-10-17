@@ -6,42 +6,37 @@
    text-align: center;
    }
 
-   #title {
+  #title {
     color:rgb(80, 29, 29);
   }
 
-.header {
-    color: goldenrod;
-    font-size: 30px;
-    background-color: green;
+ .header {
+  #mainPhoto
+   color: goldenrod;
+   font-family: font-family: 'Abel', sans-serif;
+   font-size: 30px;
+   background-color: green;
+   background-image: <url("https://github.com/1Paragon/TBProject/blob/master/Photos/river%20edge%20.jpg?raw=true");
+   background-size: cover;
+   height: 100vh;
 }
-
-.hamburger {
-        list-style-type: none;
-        margin: 4px;
-        width: 15%;
-        background-color: rgb(114, 107, 138);
-        position: top, right;
-        height: 30%;
-        overflow: hidden;
-        display: block;
-        color: rgb(184, 181, 7);
-        padding: 5px 5px;
-        text-decoration: none;
-        text-justify: left;
-        align-content:flex-start;
-    }
-
-      #mainphoto {
-        width: auto;
-        height: 100vw;
-        text-align:center;
-        background-size: contain;
-        font-weight: bold;
-      }
-
-
-    .About {
+ header > a {
+   text-decoration: none;
+   background-color: rgb(158, 155, 168);
+   text color: rgb(184, 181, 7);
+   font-size: 1.5em;
+   padding: 1.5rem;
+   border-radius: 20%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items:center;
+  @media (max-withth: 550px){
+.hidden--mobile {
+  display: none;
+}
+ }
+ .About {
       font-weight: bold;
       align-content: center;
       text-justify: left;

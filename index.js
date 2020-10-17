@@ -1,6 +1,10 @@
-const express = require("express");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
+const express = require{express};
+const morgan = require{morgan};
+const bodyParser = require{body-parser};
+
+document.querySelector(".fa-bars").addEventListener("click", () => {
+document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+});
 
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
