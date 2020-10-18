@@ -20,7 +20,7 @@
    background-size: cover;
    height: 100vh;
 }
- header > a {
+ .header > a {
    text-decoration: none;
    background-color: rgb(158, 155, 168);
    text color: rgb(184, 181, 7);
