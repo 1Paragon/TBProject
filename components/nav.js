@@ -11,7 +11,7 @@ export default() => `${
   <i class="fas fa-bars"></i>
   <ul class="hidden--mobile nav-links">
   <li><a href="index.html>Home<a/></li>
-  <li><a href="header.html>Join Us</a></li>
+  <li><a href="main.html>Join Us</a></li>
   <li><a href="main.html">Happenings</a></li>
  <li><a href="main.html">Keep in Touch</a></li>
  <li><a href="main.html">About Us</a></li>
@@ -22,7 +22,15 @@ export default() => `${
     `<li><a href="/${bio.html !== "Home" ? Bio.html : "}" title="${
       Bio.html
     }" data-navigo>${bio.text}</a></li>`,
-
-   )};
   </ul>
 </nav>
+}`;
+//fyi from example
+<nav>
+    <i class="fas fa-bars"></i>
+    <ul class="hidden--mobile nav-links">
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href= "gallery.html">Gallery</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
