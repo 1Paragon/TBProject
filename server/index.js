@@ -1,55 +1,18 @@
-const express = require {express};
-const morgan = require("morgan");
+const cors = require("cors");
+const pool = require("./db");
+const express = require("express");
 const app = express();
-const id = request.params.id {};
 
-const body-parser = require("body-parser");
-const posts = require("./routers/posts");
-const logging = (request, response, next) => {
-  console.log(`${request.method} ${request.url} ${Date.now()}`)
-  next()
-}
- console.log(logging);
-const authors = require("./routers/authors");
-const { ok } = require("assert");
-const { response } = require("express");
-const posts = db.get("posts").value();
-ok(response, posts)
-})
-const post = db.get("posts".insert(request.body).write();
-response.json(post)
-});
-
-app.listen(4040, () => console.log("Listening on port 4040"));
-
-app
- .use(logging);
- //use this ln to replace logging
- //app.use(morgan('dev'));
- .route("/posts/:id")
- .get((request, response) => {
- })
-.patch((request, response) => {
+app.use(cors());
+app.use(express.json());
+app.route("/api/getPosts").get((req, res) => {
+  pool.query("SELECT * FROM posts", (err, posts) => {
+    console.log(posts);
+    if (err) {
+      res.status(500).json({ err });
+    } else {
+      res.status(200).send({ posts: posts.rows });
+    }
   });
-  .delete((request, response)) => {
-  });
- response.json({ message: "HELLO WORLD" });
-})
-.post ((request, response)
-=> {
-//eslint-disable-next-line prettier
-response.json(request.body)
 });
-//app.route("/posts/:id").get((request, response) => {
-  //const id = request.params.id;
-//response.status(200).json({ message: "HELLO WORLD" });
-//});
-
-//const logging = (request, response, next) => {
-//console.log(`s{request.method} ${request.url} ${Date.now()}`);
-//next();
-//};
-
-app.listen(8675, () =>
-console.log('Listening on port 8675'));
-app.use(bodyParser.json()).use(morgan("dev"));
+app.listen(8675, () => console.log("Listening on port 8675"));
