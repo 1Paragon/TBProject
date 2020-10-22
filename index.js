@@ -1,7 +1,19 @@
+// importing all as a Module object, import statements always go at the top
+import * as components from "./components"
+// importing all by name
+import { header, nav, main, footer, blog } from "./components";
 // add menu toggle to bars icon in nav bar
 document.querySelector(".fa-bars").addEventListener("click", () => {
 document.querySelector("nav > ul").classList.toggle("hidden--mobile")
 });
+function render(st = state.Home) {
+  document.querySelector("#root").innerHTML = `
+  ${header(st)}
+  ${nav(state.Links)}
+  ${main(st)}
+  ${footer(st)}
+  ${blog(st)}
+ `;
 // array of pictures for gallery
 const dogPictures = [
   {

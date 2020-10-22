@@ -26,6 +26,7 @@ export default() => `${
 </nav>
 }`;
 //fyi from example
+export default () => `
 <nav>
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
@@ -33,4 +34,4 @@ export default() => `${
       <li><a href= "gallery.html">Gallery</a></li>
       <li><a href="register.html">Register</a></li>
     </ul>
-  </nav>
+  </nav>`;
