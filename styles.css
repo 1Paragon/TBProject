@@ -11,10 +11,7 @@ body {
   }
 
  #mainPhoto {
-
- header
-
-   font-size: 30px;
+  font-size: 30px;
    background-color: green;
    background-image: <url("https://github.com/1Paragon/TBProject/blob/master/Photos/river%20edge%20.jpg?raw=true");
    background-size: cover;
@@ -41,7 +38,6 @@ body {
       align-content: center;
       text-justify: left;
     }
-
 
 
     #jumbotron > h2 {

@@ -14,9 +14,10 @@ export default () => `
    <h4>History</h4>
    <br>
    <p>Since 2014, Paragon Organization has been enabling youth by providing opportunities
-      for individual growth, through exploring and learning in the information technology field.
+      for individual growth, through exploring and learning in the information technology field.</p>
    <br>
-      The Paragon Organization has built a makerspace to give youth members the place, tools and guidance necessary for them to engage with technology.  Our organization provides plentiful hands on, youth led activitiies.
-      All of the activities and programs are inclusive, encourage teamwork and peer interaction. There is also ample opportunity for supervised individual projects, as well.
+      <p>The Paragon Organization has built a makerspace to give youth members the place, tools and guidance necessary for them to engage with technology.  Our organization provides plentiful hands on, youth led activitiies.</p>
+   <br>
+      <p>All of the activities and programs are inclusive, encourage teamwork and peer interaction. There is also ample opportunity for supervised individual projects, as well.
     </p>
       </section>`;

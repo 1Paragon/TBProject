@@ -1,4 +1,4 @@
-import * as components from "./components"
+import * as components from "./components";
 import * as state from "./store";
 // importing all as a Module object, import statements always go at the top of the file
 // importing all by name
@@ -10,7 +10,7 @@ import "./env";
 import { resolve } from "path";
 // add menu toggle to bars icon in nav bar
 document.querySelector(".fa-bars").addEventListener("click", () => {
-document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+  document.querySelector("nav > ul").classList.toggle("hidden--mobile");
 });
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -26,28 +26,17 @@ function render(st = state.Home) {
 render(state.home);
 const router = new Navigo(window.location.origin);
 // adding one route
-router.on({"/": () => render(state.home),
- ":page": params => render(state[capitalize(params.page)])
-})
- resolve();
+
+router.on({
+  "/": () => render(state.home),
+  ":page": params => render(state[capitalize(params.page)])
+});
+resolve();
 // adding more than one route
 router.on({
-  "routeOne": () => console.log("Visiting Route One"),
-  "routeTwo": () => console.log("Visiting Route Two")
+  routeOne: () => console.log("Visiting Route One"),
+  routeTwo: () => console.log("Visiting Route Two")
 });
-
-// array of pictures for gallery
-const robotPictures = [
-{
- url:
- https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg,
- title: "Robotics VEX-IQ Competition - Elementary School Division, 2019"
- https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg,
- title: "Robotics VEX-IQ Competition - Elementary School Division, 2019"
- https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg,
- title: "Robotics and Technology Exposition - Individual Project Showcase, 2019"
-    }
-];
 
 // populating gallery with pictures
 const gallerySection = document.querySelector("#gallery");
@@ -64,18 +53,33 @@ document.querySelector("form").addEventListener("submit", event => {
     console.log("Input Type: ", el.type);
     console.log("Name: ", el.name);
     console.log("Value: ", el.value);
-  })
-}
-);
+  });
+});
+// array of pictures for gallery
+//const robotPictures = newFunction();
+//function newFunction() {
+//  console.log(robotPictures.length);
+//return robotPictures;
+
+const robotPictures =
+[
+url:
+https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true,
+title: Robotics VEX-IQ Competition - Elementary School Division 2019},
+url: https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true, title: Robotics VEX-IQ Competition - Elementary School Division 2019,
+ url : https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true, title: Robotics and Technology Exposition - Individual Project Showcase 2019
+  ];
+console.log(robotPictures);
+
 
 //Add event listeners here after rendering
 function listenForJoinClick(st) {
-  if (st.view ==="Newform") {
+  if (st.view === "Newform") {
     document.querySelector("#join-link").addEventListener("click", event => {
-    event.preventDefault();
-    render(state.Join);
-  });
- }
+      event.preventDefault();
+      render(state.Join);
+    });
+  }
 }
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
@@ -84,10 +88,8 @@ console.log(document.querySelectorAll("ul"));
 // listenForAbout(st);
 // listenForAdministration(st);
 
-
 //import axios from "axios";
-axios.get("https://jsonplaceholder.typicode.com/posts")
-  .then(response => {
+axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
   response.data.forEach(post => {
     state.Blog.posts.push(post);
   });

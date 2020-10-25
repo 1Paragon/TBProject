@@ -4,6 +4,7 @@ export default [
   { title: "happenings", text: "happenings" },
   { title: "about", text: "about" },
   { title: "administration", text: "administration" },
+  { title: "gallery", text: "gallery" },
   { title: "blog", text: "blog" }
 ];
 
