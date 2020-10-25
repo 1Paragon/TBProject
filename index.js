@@ -1,19 +1,52 @@
-// importing all as a Module object, import statements always go at the top
 import * as components from "./components"
+import * as state from "./store";
+// importing all as a Module object, import statements always go at the top of the file
 // importing all by name
 import { header, nav, main, footer, blog } from "./components";
+import Navigo from "navigo";
+import { capitalize } from "lodash";
+import axios from "axios";
+import "./env";
+import { resolve } from "path";
 // add menu toggle to bars icon in nav bar
 document.querySelector(".fa-bars").addEventListener("click", () => {
 document.querySelector("nav > ul").classList.toggle("hidden--mobile")
 });
+render(state.home);
+const router = new Navigo(window.location.origin);
+// adding one route
+router.on({"/": () => render(state.home),
+ ":page": params => render(state[capitalize(params.page)])
+})
+ resolve();
+// adding more than one route
+router.on({
+  "routeOne": () => console.log("Visiting Route One"),
+  "routeTwo": () => console.log("Visiting Route Two")
+});
+
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${header(st)}
   ${nav(state.Links)}
   ${main(st)}
-  ${footer(st)}
+  ${footer()}
   ${blog(st)}
  `;
+ router.updatePageLinks();
+ listenForJoinClick(st);
+ listenForHappenings(st);
+ listenForAbout(st);
+ listenForAdministration(st);
+}
+function listenForJoinClick(st) {
+  if (st.view ==="Newform") {
+    document.querySelector("#join-link").addEventListener("click", event => {
+    event.preventDefault();
+    render(state.Join);
+  });
+ }
+}
 // array of pictures for gallery
 const dogPictures = [
   {
@@ -49,12 +82,13 @@ console.log(document.querySelectorAll("ul"));
 
 
 //import axios from "axios";
-axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
+axios.get("https://jsonplaceholder.typicode.com/posts")
+  .then(response => {
   response.data.forEach(post => {
     state.Blog.posts.push(post);
   });
 });
-import "./env";
+
 //const express = require{express};
 //const morgan = require{morgan};
 //const bodyParser = require{body-parser};

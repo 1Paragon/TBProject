@@ -6,16 +6,14 @@ import { linkSync } from "fs";
 //   return ""
 // };
 
-export default() => `${
+export default() => `
 <nav>
-  <i class="fas fa-bars"></i>
+ <i class="fas fa-bars"></i>
   <ul class="hidden--mobile nav-links">
-  <li><a href="index.html>Home<a/></li>
-  <li><a href="main.html>Join Us</a></li>
-  <li><a href="main.html">Happenings</a></li>
- <li><a href="main.html">Keep in Touch</a></li>
- <li><a href="main.html">About Us</a></li>
- <li><a href="main.html">Administration</a></li>
+  ${links.map(Link =>`<li><a href="/${link.title}" data-navigo>${link.text}</a</li>`)
+  .join("")}
+  </ul>
+  </nav>`;
 
     ${linkSync.reduce( html,link) => html +
 //one of these entered for each of the nav files in views
@@ -25,13 +23,7 @@ export default() => `${
   </ul>
 </nav>
 }`;
-//fyi from example
-export default () => `
-<nav>
-    <i class="fas fa-bars"></i>
-    <ul class="hidden--mobile nav-links">
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href= "gallery.html">Gallery</a></li>
-      <li><a href="register.html">Register</a></li>
-    </ul>
-  </nav>`;
+
+// <i class="fas fa-bars"></i>
+  //<ul class="hidden--mobile nav-links">
+

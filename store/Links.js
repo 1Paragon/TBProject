@@ -1,3 +1,4 @@
+export default ["home", "join", "happenings", "about", "administration"];
 axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
   response.data.forEach(post => {
     state.Blog.posts.push(post);

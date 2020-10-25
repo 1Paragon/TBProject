@@ -1,5 +1,5 @@
-export default () => `
+export default st => `
 <header>
-    <h1>Paragon Organization</h1>
+    <h1>${st.header}</h1>
   </header>
 `;
