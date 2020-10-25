@@ -1,6 +1,6 @@
-.body {
+body {
    background-color: #5c8a68;
-   //font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    color: rgb(220, 223, 72);
    font-size: 16px;
    text-align: center;
@@ -10,20 +10,19 @@
     color:rgb(80, 29, 29);
   }
 
- .header {
-  #mainPhoto
-   color: goldenrod;
-   font-family: font-family: 'Abel', sans-serif;
+ #mainPhoto {
+
+ header
+
    font-size: 30px;
    background-color: green;
    background-image: <url("https://github.com/1Paragon/TBProject/blob/master/Photos/river%20edge%20.jpg?raw=true");
    background-size: cover;
    height: 100vh;
-}
- .header > a {
+
    text-decoration: none;
    background-color: rgb(158, 155, 168);
-   text color: rgb(184, 181, 7);
+   color: rgb(184, 181, 7);
    font-size: 1.5em;
    padding: 1.5rem;
    border-radius: 20%;
@@ -31,26 +30,19 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items:center;
-  @media (max-withth: 550px){
-.hidden--mobile {
-  display: none;
+   @media (max-width: 550px){
+   .hidden--mobile {
+    display: none;
 }
  }
+}
  .About {
       font-weight: bold;
       align-content: center;
       text-justify: left;
     }
 
-   #jumbotron {
-      background: url("https://github.com/1Paragon/TBProject/blob/master/Photos/river%20edge%20.jpg?raw=true"); center center no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 90vh;
-    }
+
 
     #jumbotron > h2 {
       color: white;
@@ -111,7 +103,7 @@
       .hidden--mobile {
         display: none !important;
       }
-
+    }
       nav {
         display: flex;
         align-items: center;
@@ -147,13 +139,13 @@
         flex-direction: column;
         align-items: center;
       }
-    }
+
 
     @media (min-width: 550px){
       #jumbotron {
         height: 60vh;
       }
-
+    }
       nav > ul {
         display: flex;
         justify-content: space-evenly;
@@ -188,7 +180,7 @@
         grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
         background-color: white;
       }
-    }
+
 
 
 
