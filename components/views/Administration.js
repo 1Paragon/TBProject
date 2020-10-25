@@ -9,7 +9,6 @@ export default () => `
       <input type="text" name="password" id="password">
     </div>
     <div>
-
     <input type="submit" name="register" value="Submit">
   </form>`;
 

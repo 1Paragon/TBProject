@@ -12,6 +12,17 @@ import { resolve } from "path";
 document.querySelector(".fa-bars").addEventListener("click", () => {
 document.querySelector("nav > ul").classList.toggle("hidden--mobile")
 });
+function render(st = state.Home) {
+  document.querySelector("#root").innerHTML = `
+  ${header(st)}
+  ${nav(state.Links)}
+  ${main(st)}
+  ${footer()}
+  ${blog(st)}
+  router.updatePageLinks();
+ `;
+}
+
 render(state.home);
 const router = new Navigo(window.location.origin);
 // adding one route
@@ -25,41 +36,22 @@ router.on({
   "routeTwo": () => console.log("Visiting Route Two")
 });
 
-function render(st = state.Home) {
-  document.querySelector("#root").innerHTML = `
-  ${header(st)}
-  ${nav(state.Links)}
-  ${main(st)}
-  ${footer()}
-  ${blog(st)}
- `;
- router.updatePageLinks();
- listenForJoinClick(st);
- listenForHappenings(st);
- listenForAbout(st);
- listenForAdministration(st);
-}
-function listenForJoinClick(st) {
-  if (st.view ==="Newform") {
-    document.querySelector("#join-link").addEventListener("click", event => {
-    event.preventDefault();
-    render(state.Join);
-  });
- }
-}
 // array of pictures for gallery
-const dogPictures = [
-  {
-    url:
-      "https://images.unsplash.com/photo-1505628346881-b72b27e84530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    title: "sunglass doggo"
-  },
-//put your pictures in here with this format
-}
+const robotPictures = [
+{
+ url:
+ https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg,
+ title: "Robotics VEX-IQ Competition - Elementary School Division, 2019"
+ https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg,
+ title: "Robotics VEX-IQ Competition - Elementary School Division, 2019"
+ https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg,
+ title: "Robotics and Technology Exposition - Individual Project Showcase, 2019"
+    }
 ];
+
 // populating gallery with pictures
 const gallerySection = document.querySelector("#gallery");
-dogPictures.forEach(pic => {
+robotPictures.forEach(pic => {
   let img = document.createElement("img");
   img.src = pic.url;
   img.alt = pic.title;
@@ -72,13 +64,25 @@ document.querySelector("form").addEventListener("submit", event => {
     console.log("Input Type: ", el.type);
     console.log("Name: ", el.name);
     console.log("Value: ", el.value);
-  });
-});
+  })
+}
+);
 
+//Add event listeners here after rendering
+function listenForJoinClick(st) {
+  if (st.view ==="Newform") {
+    document.querySelector("#join-link").addEventListener("click", event => {
+    event.preventDefault();
+    render(state.Join);
+  });
+ }
+}
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
-//Add event listeners here after rendering
-
+//listenForJoinClick(st);
+// listenForHappenings(st);
+// listenForAbout(st);
+// listenForAdministration(st);
 
 
 //import axios from "axios";

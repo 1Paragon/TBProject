@@ -1,4 +1,4 @@
 export default {
-  header: "Adminitration",
+  header: "Administration",
   view: "administration"
 };

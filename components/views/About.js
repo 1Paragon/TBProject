@@ -2,7 +2,7 @@ export default () => `
 <section id="about">
      <h2>About Us</h2>
       <br>
-      //put local photo here in <url()
+      //put a local photo here in <url
       <h4>Participants</h4>
       <p>Local youth interested in learning more about technology</p>
    <br>
