@@ -61,16 +61,24 @@ document.querySelector("form").addEventListener("submit", event => {
 //  console.log(robotPictures.length);
 //return robotPictures;
 
-const robotPictures =
-[
+const robotPictures = [
+{
 url:
-https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true,
-title: Robotics VEX-IQ Competition - Elementary School Division 2019},
-url: https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true, title: Robotics VEX-IQ Competition - Elementary School Division 2019,
- url : https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true, title: Robotics and Technology Exposition - Individual Project Showcase 2019
+"https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true",
+title: "Robotics VEX-IQ Competition - Elementary School Division 2019"
+},
+url: "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true", title: "Robotics VEX-IQ Competition - Elementary School Division 2019"},
+url : "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true", title: "Robotics and Technology Exposition - Individual Project Showcase 2019"
+ }
   ];
-console.log(robotPictures);
-
+// populating gallery with pictures
+const gallerySection = document.querySelector("#gallery");
+robotPictures.forEach(pic => {
+  let img = document.createElement("img");
+  img.src = pic.url;
+  img.alt = pic.title;
+  gallerySection.appendChild(img);
+});
 
 //Add event listeners here after rendering
 function listenForJoinClick(st) {
