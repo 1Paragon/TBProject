@@ -11,5 +11,4 @@ export default () => `
           display projects and/ or enroll their projects in a build design contest.
 
       <h4>The Event venue, time and date are to be determined</h4>
-
  </section>`;

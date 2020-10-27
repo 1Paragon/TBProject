@@ -38,14 +38,6 @@ router.on({
   routeTwo: () => console.log("Visiting Route Two")
 });
 
-// populating gallery with pictures
-const gallerySection = document.querySelector("#gallery");
-robotPictures.forEach(pic => {
-  let img = document.createElement("img");
-  img.src = pic.url;
-  img.alt = pic.title;
-  gallerySection.appendChild(img);
-});
 // handle form submission
 document.querySelector("form").addEventListener("submit", event => {
   event.preventDefault();
@@ -60,17 +52,21 @@ document.querySelector("form").addEventListener("submit", event => {
 //function newFunction() {
 //  console.log(robotPictures.length);
 //return robotPictures;
-
-const robotPictures = [
-{
-url:
-"https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true",
-title: "Robotics VEX-IQ Competition - Elementary School Division 2019"
-},
-url: "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true", title: "Robotics VEX-IQ Competition - Elementary School Division 2019"},
-url : "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true", title: "Robotics and Technology Exposition - Individual Project Showcase 2019"
- }
-  ];
+//const robotPictures = [
+//{
+//url:
+//"https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true",
+//title:
+//},
+//url: "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true",
+//title:
+// },
+//{
+//url : "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true",
+//title:
+//}
+// ]
+//};
 // populating gallery with pictures
 const gallerySection = document.querySelector("#gallery");
 robotPictures.forEach(pic => {
