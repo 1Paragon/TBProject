@@ -1,6 +1,6 @@
 import { linkSync } from "fs";
 export default links => `
-<nav>
+ <nav>
  <i class="fas fa-bars"></i>
   <ul class="hidden--mobile nav-links">
   ${links
@@ -15,7 +15,6 @@ export default links => `
 // } else {
 //   return ""
 // };
-
 //export default links => `
 //<nav>
 //  ${linkSync.reduce( html,link) => html +

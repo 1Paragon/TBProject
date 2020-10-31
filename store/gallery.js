@@ -1,6 +1,6 @@
 export default {
-  header: "gallery",
-  view: "gallery",
+  header: "Gallery",
+  view: "Gallery",
   Photos: [
     {
       url:

@@ -2,33 +2,29 @@ import * as components from "./components";
 import * as state from "./store";
 // importing all as a Module object, import statements always go at the top of the file
 // importing all by name
-import { header, nav, main, footer, blog } from "./components";
+import { Header, Nav, Main, Footer } from "./components";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import "./env";
 import { resolve } from "path";
 // add menu toggle to bars icon in nav bar
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-});
+// document.querySelector(".fa-bars").addEventListener("click", () => {
+//   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+// });
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-  ${header(st)}
-  ${nav(state.Links)}
-  ${main(st)}
-  ${footer()}
-  ${blog(st)}
+  ${Header(st)}
+  ${Nav(state.links)}
+  ${Main(st)}
+  ${Footer()}`;
   router.updatePageLinks();
- `;
 }
-
-render(state.home);
+render(state.Home);
 const router = new Navigo(window.location.origin);
 // adding one route
-
 router.on({
-  "/": () => render(state.home),
+  "/": () => render(state.Home),
   ":page": params => render(state[capitalize(params.page)])
 });
 resolve();
@@ -39,7 +35,7 @@ router.on({
 });
 
 // handle form submission
-document.querySelector("form").addEventListener("submit", event => {
+document.querySelector("form").addEventListener("click", event => {
   event.preventDefault();
   Array.from(event.target.elements).forEach(el => {
     console.log("Input Type: ", el.type);
