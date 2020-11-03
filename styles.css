@@ -12,15 +12,13 @@ body {
 
  #mainPhoto {
   font-size: 30px;
-   background-color: green;
+   background-color: rgb(174, 214, 174);
    background-image: <url("https://github.com/1Paragon/TBProject/blob/master/Photos/river%20edge%20.jpg?raw=true");
    background-size: cover;
-   height: 100vh;
+   height: 50vh;
 
    text-decoration: none;
-   background-color: rgb(158, 155, 168);
-   color: rgb(184, 181, 7);
-   font-size: 1.5em;
+   font-size: 2.5em;
    padding: 1.5rem;
    border-radius: 20%;
    display: flex;
@@ -65,7 +63,6 @@ body {
 
     form > input[type=submit] {
       width: 40%;
-      margin: .5rem;
       margin-right: auto;
     }
 
@@ -73,6 +70,9 @@ body {
       border-top: solid 1px black;
       padding: 2rem 2rem 4rem;
       margin: 1rem 1rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center
     }
 
     #bio {
@@ -80,7 +80,6 @@ body {
     }
 
     #gallery {
-      border: solid 1px black;
       clear: both;
     }
 
@@ -102,7 +101,7 @@ body {
     }
       nav {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
       }
 

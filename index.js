@@ -1,21 +1,15 @@
 import * as components from "./components";
 import * as state from "./store";
-// importing all as a Module object, import statements always go at the top of the file
-// importing all by name
 import { Header, Nav, Main, Footer } from "./components";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import "./env";
 import { resolve } from "path";
-// add menu toggle to bars icon in nav bar
-// document.querySelector(".fa-bars").addEventListener("click", () => {
-//   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-// });
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
-  ${Nav(state.links)}
+  ${Nav(state.Links)}
   ${Main(st)}
   ${Footer()}`;
   router.updatePageLinks();
@@ -64,13 +58,13 @@ document.querySelector("form").addEventListener("click", event => {
 // ]
 //};
 // populating gallery with pictures
-const gallerySection = document.querySelector("#gallery");
-robotPictures.forEach(pic => {
-  let img = document.createElement("img");
-  img.src = pic.url;
-  img.alt = pic.title;
-  gallerySection.appendChild(img);
-});
+// const gallerySection = document.querySelector("#gallery");
+// robotPictures.forEach(pic => {
+//   let img = document.createElement("img");
+//   img.src = pic.url;
+//   img.alt = pic.title;
+//   gallerySection.appendChild(img);
+// });
 
 //Add event listeners here after rendering
 function listenForJoinClick(st) {
@@ -83,7 +77,7 @@ function listenForJoinClick(st) {
 }
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
-//listenForJoinClick(st);
+listenForJoinClick(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);

@@ -1,6 +1,6 @@
 export default () => `
 <section id="happenings">
-   <h2>Happenings</h2>
+   <h2>Happenings and Events</h2>
       <br>
       <h3>The Annual Robotics and Technology Exposition</h3>
       <br>
@@ -8,7 +8,7 @@ export default () => `
       <br>it is open to the entire community.
       <br>It gives our participants a chance to participate in age-level group robotics
       <br>competitive robotics events.  Organization and community youths may also
-          display projects and/ or enroll their projects in a build design contest.
+          display projects and/or enroll their projects in a build design contest.
 
       <h4>The Event venue, time and date are to be determined</h4>
  </section>`;
