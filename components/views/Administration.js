@@ -1,4 +1,5 @@
 export default () => `
+<h1>Fundraising</h1>
 <form id="register" method="POST" action="">
     <div>
       <label for="username">Username:</label>
@@ -10,6 +11,7 @@ export default () => `
     </div>
     <div>
     <input type="submit" name="register" value="Submit">
+    </div>
   </form>`;
 
 //this section will allow the addition of PDF and other organizational documents with links

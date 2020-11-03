@@ -1,32 +1,29 @@
-import * as components from "./components";
-import * as state from "./store";
 import { Header, Nav, Main, Footer } from "./components";
+import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import "./env";
 import { resolve } from "path";
+
+const router = new Navigo(window.location.origin);
+
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
   ${Nav(state.Links)}
   ${Main(st)}
   ${Footer()}`;
+
   router.updatePageLinks();
 }
-render(state.Home);
-const router = new Navigo(window.location.origin);
-// adding one route
-router.on({
-  "/": () => render(state.Home),
-  ":page": params => render(state[capitalize(params.page)])
-});
-resolve();
-// adding more than one route
-router.on({
-  routeOne: () => console.log("Visiting Route One"),
-  routeTwo: () => console.log("Visiting Route Two")
-});
+
+router
+  .on({
+    "/": () => render(state.Home),
+    ":page": params => render(state[capitalize(params.page)])
+  })
+  .resolve();
 
 // handle form submission
 document.querySelector("form").addEventListener("click", event => {

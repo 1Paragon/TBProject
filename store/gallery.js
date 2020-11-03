@@ -1,7 +1,7 @@
 export default {
   header: "Gallery",
   view: "Gallery",
-  Photos: [
+  photos: [
     {
       url:
         "https://github.com/1Paragon/TBProject/blob/master/Photos/robots1a.jpg?raw=true",

@@ -10,6 +10,7 @@ export default links => `
     .join("")}
   </ul>
   </nav>`;
+
 // if (link.title !== "Home") {
 //   return link.title
 // } else {
