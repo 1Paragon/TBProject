@@ -1,5 +1,7 @@
 export default () => `
-
+<h2>If you would like to Volunteer or Donate to our youth
+<br>Please enter your information into the form below</h2>
+<br>
 <form id="register" method="POST" action="">
     <div>
       <label for="username">Username:</label>
@@ -15,4 +17,4 @@ export default () => `
     </div>
     <input type="submit" name="register" value="Register">
   </form>`;
-// add button to allow user to go to donation forms and related links
+// add button and section to allow user to go to payment methods forms and related links
