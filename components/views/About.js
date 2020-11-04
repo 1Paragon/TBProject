@@ -1,5 +1,5 @@
 export default () => `
-<section id="about">
+<section id="About">
      <h2>About Us</h2>
       <br>
       //put a local photo here in

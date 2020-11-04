@@ -1,4 +1,5 @@
 export default () => `
+
 <form id="register" method="POST" action="">
     <div>
       <label for="username">Username:</label>
