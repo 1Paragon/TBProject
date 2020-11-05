@@ -48,7 +48,6 @@ body {
  }
  #About > path {
   background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/path1.jpg?raw=true");
-
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -72,6 +71,12 @@ body {
       padding: 1.0rem;
       border-radius: 10px;
     }
+    #Happenings > robopic {
+      image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true");
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
 
     form {
       border: solid 2px black;
@@ -87,18 +92,9 @@ body {
       width: 40%;
       }
 
-    footer {
-      border-top: solid 1px black;
-      padding: 2rem 2rem 4rem;
-      margin: 1rem 1rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center
-    }
 
-    #bio {
-      margin: 1rem;
-    }
+
+
     #gallery {
       clear: both;
       }
@@ -111,7 +107,6 @@ body {
       width: 90%;
       margin: auto;
     }
-
       nav {
         display: flex;
         align-items: flex-start;
@@ -150,19 +145,20 @@ body {
         display: none;
       }
 
-      #bio img {
-        float: left;
-        width: 40%;
-        height: auto;
-        margin-right: 1rem;
-      }
-
       #gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+      #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+        background-color: white;
+      }
 
+      #bio {
+        margin: 1rem;
+      }
       #bio {
         margin-right: 3rem;
       }
@@ -172,11 +168,26 @@ body {
         height: auto;
         margin-right: 1rem;
       }
-      #gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
-        background-color: white;
+      #bio img {
+        float: left;
+        width: 40%;
+        height: auto;
+        margin-right: 1rem;
       }
+
+      footer {
+        border-top: solid 1px black;
+        padding: 2rem 2rem 4rem;
+        margin: 1rem 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center
+      }
+
+
+
+
+
 
 
 

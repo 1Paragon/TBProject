@@ -3,7 +3,8 @@ export default () => `
   <h2>Happenings and Events</h2>
    <br>
    <div class="robopic">
-     <img src=
+     <img src="https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true">
+   </div>
    <h3>The Annual Robotics and Technology Exposition</h3>
    <br>
     <p>This is Paragon's premier annual showcase and competition event
