@@ -1,8 +1,8 @@
 export default [
   { title: "Home", text: "Home" },
   { title: "Join", text: "Join" },
-  { title: "Happenings", text: "Happenings" },
-  { title: "About", text: "About" },
+  { title: "Happenings", text: "Happenings and Events" },
+  { title: "About", text: "About Us" },
   { title: "Administration", text: "Administration" },
   { title: "Gallery", text: "Gallery" },
   { title: "Blog", text: "Blog" }
