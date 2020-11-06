@@ -72,27 +72,17 @@ listenForJoinClick(st);
 // listenForAbout(st);
 // listenForAdministration(st);
 {
-//  <section>
-//<img height="550px" width="550px" style="border:2px solid grey"
-//src="/robo2.jpeg" id="mainImage" />
-// <br />
-//<div id="imageDiv" onclick = "changeImage(event)">
-// <img class="imgThumbnails" src="/Thumbnails/robo3a.jpeg" />
-//  <img class="imgThumbnails" src="/Thumbnails/robo4.jpeg" />
-//  <img class="imgThumbnails" src="/Thumbnails/robo5a.jpeg" />
-//  <img class="imgThumbnails" src="/Thumbnails/robo6.jpeg" />
-//</div>
+//
 //function changeImage(event)
 //{
 //  event =event || window.event;
 //  let targetElement = event.target || event.srcElement;
 //  if(targetElement.tagname === "IMG")
 //  {
-//   document.getElementById("mainimage").src = targetElement.getAttribute(src);
+//   document.getElementById("mainImage").src = targetElement.getAttribute(src);
 //  }
-//}
-//</section> */
-//}
+//};
+//
 //import axios from "axios";
 // axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
 //   response.data.forEach(post => {

@@ -1,10 +1,11 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "Join", text: "Join" },
+  { title: "Join", text: "Join Us" },
   { title: "Happenings", text: "Happenings and Events" },
   { title: "About", text: "About Us" },
   { title: "Administration", text: "Administration" },
   { title: "Gallery", text: "Gallery" },
+  { title: "Thumbnails", text: "Robotics" },
   { title: "Blog", text: "Blog" }
 ];
 
