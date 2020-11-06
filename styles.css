@@ -107,7 +107,11 @@ body {
       width: 90%;
       margin: auto;
     }
-      nav {
+  #gallery {
+    image: url("https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots1ab.jpg?raw=true");
+    image: url
+
+    nav {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
