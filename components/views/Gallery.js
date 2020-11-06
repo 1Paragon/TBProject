@@ -1,7 +1,9 @@
 export default st => `
-${st.Gallery.reduce(
+<section>
+${st.pics.reduce(
   (html, Photogallery) =>
-    html +
-    `<img src="${Photogallery.url}" alt="${Photogallery.title}width="200" height="150">`,
+    html + `<img src="${Photogallery.url}" alt="${Photogallery.title}">`,
   ``
-)}`;
+)}
+</section>
+`;

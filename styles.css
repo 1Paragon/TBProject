@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 30vh;
 }
 
 #jumbotron {
@@ -91,6 +91,7 @@ form > * {
 form > input[type="submit"] {
   width: 40%;
 }
+
 #Gallery {
   clear: both;
 }
@@ -112,6 +113,16 @@ form > input[type="submit"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   background-color: white;
+}
+Thumbnails {
+height: 550px;
+width:550px;
+border:2px grey;
+}
+.imgThumbnails {
+  height: 110px;
+  width: 110px;
+  border: 2px grey;
 }
 
 nav {

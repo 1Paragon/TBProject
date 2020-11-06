@@ -35,34 +35,27 @@ document.querySelector("form").addEventListener("click", event => {
   });
 });
 // array of pictures for gallery
-//const robotPictures = newFunction();
-//function newFunction() {
-//  console.log(robotPictures.length);
-//return robotPictures;
-//const robotPictures = [
-//{
-//url:
-//"https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots1a.jpg?raw=true",
-//title:
-//},
-//url: "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots2a.jpg?raw=true",
-//title:
-// },
-//{
-//url : "https://raw.githubusercontent.com/1Paragon/TBProject/master/Photos/robots3a.jpg?raw=true",
-//title:
-//}
-// ]
-//};
+// const Photogallery = newFunction();
+// function newFunction() {
+//   console.log(Photogallery.length);
+//   return Photogallery;
+// }
 // populating gallery with pictures
-// const gallerySection = document.querySelector("#gallery");
-// robotPictures.forEach(pic => {
+// const gallerySection = document.querySelector("#Gallery");
+// picture.forEach(Photogallery => {
 //   let img = document.createElement("img");
-//   img.src = pic.url;
-//   img.alt = pic.title;
+//   img.src = Photogallery.url;
+//   img.alt = Photogallery.title;
 //   gallerySection.appendChild(img);
 // });
-
+//wrong
+// const gallerySection = document.querySelector("#Gallery");
+// picture.forEach(Photogallery => {
+//   let img = document.createElement("img");
+//   img.src = `${Photogallery.url}`;
+//   img.alt = `${Photogallery.title}`;
+//   gallerySection.appendChild(img);
+// });
 //Add event listeners here after rendering
 function listenForJoinClick(st) {
   if (st.view === "Newform") {
@@ -78,14 +71,33 @@ listenForJoinClick(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);
-
+{
+//  <section>
+//<img height="550px" width="550px" style="border:2px solid grey"
+//src="/robo2.jpeg" id="mainImage" />
+// <br />
+//<div id="imageDiv" onclick = "changeImage(event)">
+// <img class="imgThumbnails" src="/Thumbnails/robo3a.jpeg" />
+//  <img class="imgThumbnails" src="/Thumbnails/robo4.jpeg" />
+//  <img class="imgThumbnails" src="/Thumbnails/robo5a.jpeg" />
+//  <img class="imgThumbnails" src="/Thumbnails/robo6.jpeg" />
+//</div>
+//function changeImage(event)
+//{
+//  event =event || window.event;
+//  let targetElement = event.target || event.srcElement;
+//  if(targetElement.tagname === "IMG")
+//  {
+//   document.getElementById("mainimage").src = targetElement.getAttribute(src);
+//  }
+//}
+//</section> */
+//}
 //import axios from "axios";
-axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
-  response.data.forEach(post => {
-    state.Blog.posts.push(post);
-  });
-});
-
-//const express = require{express};
-//const morgan = require{morgan};
-//const bodyParser = require{body-parser};
+// axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
+//   response.data.forEach(post => {
+//     state.Blog.posts.push(post);
+// });
+// const express = require{express};
+// const morgan = require{morgan};
+// const bodyParser = require{body-parser};
