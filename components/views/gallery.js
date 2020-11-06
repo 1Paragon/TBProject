@@ -1,5 +1,6 @@
 export default st => `
 ${st.Gallery.reduce(
-  (html, photos) => html + `<img src="${photos.url}" alt="${photos.title}">`,
+  (html, Photogallery) =>
+    html + `<img src="${Photogallery.url}" alt="${Photogallery.title}">`,
   ``
 )}`;

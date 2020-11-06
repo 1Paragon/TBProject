@@ -91,10 +91,6 @@ body {
     form > input[type=submit] {
       width: 40%;
       }
-
-
-
-
     #gallery {
       clear: both;
       }
@@ -104,12 +100,11 @@ body {
     #gallery img {
       display: block;
       height: auto;
-      width: 90%;
+      width: 60%;
       margin: auto;
     }
-  #gallery {
-    image: url("https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots1ab.jpg?raw=true");
-    image: url
+
+
 
     nav {
         display: flex;
