@@ -3,10 +3,14 @@ export default {
   view: "Gallery",
   Photogallery: [
     {
-      url: "",
-      title: "vex iq robotics competiton elementary school division 2019"
-    }
-    //paste all url as an array
+      url:
+        "https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots1ab.jpg?raw=true",
+      title: "vex iq robotics competition elementary school division 2019"
+    },
+    {
+      url:
+        "https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots2ac.jpg?raw=true",
+      title: "vex iq robotics competition elementary school division 2019"
     }
   ]
 };

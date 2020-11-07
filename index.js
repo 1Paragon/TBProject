@@ -48,7 +48,7 @@ document.querySelector("form").addEventListener("click", event => {
 //   img.alt = Photogallery.title;
 //   gallerySection.appendChild(img);
 // });
-//wrong
+//wrong?
 // const gallerySection = document.querySelector("#Gallery");
 // picture.forEach(Photogallery => {
 //   let img = document.createElement("img");
