@@ -15,7 +15,6 @@ export default () => `
    <p>Organization and community youths may also display
    projects and/or enroll their projects in a build design contest.</p>
 
-
    <h4>The Event venue, time and date are to be determined</h4>
    <div>
    <p>You can find more examples of our youth

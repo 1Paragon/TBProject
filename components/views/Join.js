@@ -16,5 +16,11 @@ export default () => `
       <input type="email" name="email" id="email" placeholder="your@email.here">
     </div>
     <input type="submit" name="register" value="Register">
-  </form>`;
-// add button and section to allow user to go to payment methods forms and related links
+  </form>
+  <br>
+  <h2>Please Donate</h2>
+  <p>Please Select Your Preferred Secure Payment Method Below</p>
+  <br>
+   <a href="#" class="myButton">DONATE</a>
+  `;
+// add section to allow user to go to payment methods and forms

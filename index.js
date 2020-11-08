@@ -2,7 +2,7 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-//import axios from "axios";
+import axios from "axios";
 import "./env";
 import { resolve } from "path";
 //const express = require{express};
@@ -39,13 +39,13 @@ document.querySelector("form").addEventListener("click", event => {
 //   return Photogallery;
 // }
 // populating gallery with pictures
-// const gallerySection = document.querySelector("#Gallery");
-// picture.forEach(Photogallery => {
-//   let img = document.createElement("img");
-//   img.src = Photogallery.url;
-//   img.alt = Photogallery.title;
-//   gallerySection.appendChild(img);
-// });
+const gallerySection = document.querySelector("#Gallery");
+picture.forEach(Photogallery => {
+  let img = document.createElement("img");
+  img.src = Photogallery.url;
+  img.alt = Photogallery.title;
+  gallerySection.appendChild(img);
+});
 //wrong?
 // const gallerySection = document.querySelector("#Gallery");
 // picture.forEach(Photogallery => {
@@ -66,6 +66,7 @@ function listenForJoinClick(st) {
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
 listenForJoinClick(st);
+listenForMyButton(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);
@@ -74,11 +75,11 @@ listenForJoinClick(st);
 //  event =event || window.event;
 //  let targetElement = event.target || event.srcElement;
 //  if(targetElement.tagname === "IMG")
+// }
 //  {
 //   document.getElementById("mainImage").src = targetElement.getAttribute(src);
 //  }
 //};
-//import axios from "axios";
 // axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
 //   response.data.forEach(post => {
 //     state.Blog.posts.push(post);

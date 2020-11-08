@@ -13,7 +13,6 @@ export default () => `
     <input type="submit" name="register" value="Submit">
     </div>
   </form>`;
-
 //this section will allow the addition of PDF and other organizational documents with links
 //to external fundraising sites  It is hidden from public view and for site administrators
 //put in a particular url for a photo or doc in ln5 after placeholder
