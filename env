@@ -1,2 +1,5 @@
-import dotenv
-dotenv.config
+GITHUB_USERNAME=<>
+GITHUB_TOKEN=<>
+TB_API_KEY=<>
+
+

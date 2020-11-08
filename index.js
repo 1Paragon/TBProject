@@ -4,11 +4,13 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import "./env";
-import { resolve } from "path";
+//import { resolve } from "path";
 //const express = require{express};
 //const morgan = require{morgan};
 //const bodyParser = require{body-parser};
+
 const router = new Navigo(window.location.origin);
+
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
@@ -20,9 +22,10 @@ function render(st = state.Home) {
 router
   .on({
     "/": () => render(state.Home),
-    ":page": params => render(state[capitalize(params.page)])
+    ":page": params => render(state[capitalize(params.view)])
   })
   .resolve();
+
 // handle form submission
 document.querySelector("form").addEventListener("click", event => {
   event.preventDefault();
@@ -32,18 +35,31 @@ document.querySelector("form").addEventListener("click", event => {
     console.log("Value: ", el.value);
   });
 });
-// array of pictures for gallery
-// const Photogallery = newFunction();
-// function newFunction() {
-//   console.log(Photogallery.length);
-//   return Photogallery;
-// }
+//array for Gallery
+const Photogallery = [
+  {
+    url:
+      "https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots1ab.jpg?raw=true",
+    title: "vex iq robotics competition elementary school division 2019"
+  },
+  {
+    url:
+      "https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots2ac.jpg?raw=true",
+    title: "vex iq robotics competition elementary school division 2019"
+  }
+];
+
+let Thumbnails = newFunction();
+function newFunction() {
+  console.log(Photogallery.length);
+  return Photogallery;
+}
 // populating gallery with pictures
 const gallerySection = document.querySelector("#Gallery");
-picture.forEach(Photogallery => {
+Photogallery.forEach(pic => {
   let img = document.createElement("img");
-  img.src = Photogallery.url;
-  img.alt = Photogallery.title;
+  img.src = pic.url;
+  img.alt = pic.title;
   gallerySection.appendChild(img);
 });
 //wrong?

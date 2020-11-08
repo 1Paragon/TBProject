@@ -1,5 +1,5 @@
 export default st => `
-${st.photogallery.reduce(
+${st.Photogallery.reduce(
   (html, photo) => html + `<img src="${photo.url}" alt="${photo.title}">`,
   ``
 )}`;
