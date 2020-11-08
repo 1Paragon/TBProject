@@ -3,6 +3,8 @@ export default () => `
   <br>
 <div class="path">
   <img src="https://github.com/1Paragon/TBProject/blob/master/Photos/path1.jpg?raw=true">
+  </div>
+
   <h2>Helping to make the pathway to success easier</h2>
   <br>
    <h4>Participants</h4>

@@ -1,0 +1,7 @@
+#Gallery > Photogallery {
+  image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true");
+  image: url("https://github.com/1Paragon/TBProject/blob/master/Photogallery/robots2ac.jpg?raw=true");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

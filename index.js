@@ -2,29 +2,27 @@ import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-import axios from "axios";
+//import axios from "axios";
 import "./env";
 import { resolve } from "path";
-
+//const express = require{express};
+//const morgan = require{morgan};
+//const bodyParser = require{body-parser};
 const router = new Navigo(window.location.origin);
-
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
   ${Nav(state.Links)}
   ${Main(st)}
   ${Footer()}`;
-
   router.updatePageLinks();
 }
-
 router
   .on({
     "/": () => render(state.Home),
     ":page": params => render(state[capitalize(params.page)])
   })
   .resolve();
-
 // handle form submission
 document.querySelector("form").addEventListener("click", event => {
   event.preventDefault();
@@ -71,8 +69,6 @@ listenForJoinClick(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);
-{
-//
 //function changeImage(event)
 //{
 //  event =event || window.event;
@@ -82,12 +78,7 @@ listenForJoinClick(st);
 //   document.getElementById("mainImage").src = targetElement.getAttribute(src);
 //  }
 //};
-//
 //import axios from "axios";
 // axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
 //   response.data.forEach(post => {
 //     state.Blog.posts.push(post);
-// });
-// const express = require{express};
-// const morgan = require{morgan};
-// const bodyParser = require{body-parser};

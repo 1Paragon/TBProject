@@ -1,5 +1,5 @@
 export default st => `
-<section id="blog">
+<section id="Blog">
 ${st.posts
   .map(post => {
     formatBlogPost(post);

@@ -1,6 +1,10 @@
 export default () => `
 <section>
-  src="/robo2.jpeg" id="mainImage" />
+const Thumbnails = newFunction();
+function newFunction() {
+console.log(Thumbnails.length);
+return Thumbnails;
+ src="/robo2.jpeg" id="mainImage" />
    <br />
 <div id="imageDiv">
   <img class="imgThumbnails" src="/Thumbnails/robo3a.jpeg" />

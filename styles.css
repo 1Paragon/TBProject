@@ -108,11 +108,8 @@ form > input[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#Gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   background-color: white;
+  border:2px
 }
 Thumbnails {
 height: 550px;

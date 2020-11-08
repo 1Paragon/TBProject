@@ -1,15 +1,12 @@
+//import { Gallery } from "../../Photogallery.css";
 export default st => `
 <section>
-export default () => `
-<section id="Gallery">
+$(st.Gallery.reduce(
+  (html, photo) =>
+   html +
+   `<div id="Photogallery"><img src="${Photo.url}" alt="${Photo.title}"></div>`,
+   ``
+)}
 </section>
 `;
 
-// <section>
-// ${st.pics.reduce(
-//   (html, Photogallery) =>
-//     html + `<img src="${Photogallery.url}" alt="${Photogallery.title}">`,
-//   ``
-// )}
-// </section>
-// `;
