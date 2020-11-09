@@ -81,8 +81,8 @@ function listenForJoinClick(st) {
 }
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
-listenForJoinClick(st);
-listenForMyButton(st);
+//listenForJoinClick(st);
+//listenForMyButton(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);
