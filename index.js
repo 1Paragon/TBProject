@@ -8,7 +8,6 @@ import "./env";
 //const express = require{express};
 //const morgan = require{morgan};
 //const bodyParser = require{body-parser};
-
 const router = new Navigo(window.location.origin);
 
 function render(st = state.Home) {
@@ -93,12 +92,12 @@ function addNavEventListeners() {
 }
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
-//listenForJoinClick(st);
-//listenForMyButton(st);
+// listenForJoinClick(st);
+// listenForMyButton(st);
 // listenForHappenings(st);
 // listenForAbout(st);
 // listenForAdministration(st);
-//function changeImage(event)
+// function changeImage(event)
 //{
 //  event =event || window.event;
 //  let targetElement = event.target || event.srcElement;
