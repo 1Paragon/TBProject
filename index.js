@@ -18,14 +18,16 @@ function render(st = state.Home) {
   ${Main(st)}
   ${Footer()}`;
   router.updatePageLinks();
+
+  addNavEventListeners();
 }
 router
   .on({
     "/": () => render(state.Home),
-    ":page": params => render(state[capitalize(params.view)])
+    ":view": params => render(state[capitalize(params.view)])
   })
   .resolve();
-
+// changed from ":page":
 // handle form submission
 document.querySelector("form").addEventListener("click", event => {
   event.preventDefault();
@@ -78,6 +80,16 @@ function listenForJoinClick(st) {
       render(state.Join);
     });
   }
+}
+
+//addNavEventListeners();
+function addNavEventListeners() {
+  // add menu toggle to bars icon in nav bar
+  document
+    .querySelector(".fa-bars")
+    .addEventListener("click", () =>
+      document.querySelector("nav > ul").classList.toggle("hidden--mobile")
+    );
 }
 console.log(document.getElementsByTagName("ul"));
 console.log(document.querySelectorAll("ul"));
