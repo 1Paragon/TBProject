@@ -152,7 +152,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<section id=\"jumbotron\">\n\n  <h1>Helping form future tech leaders</h1>\n  <h2>Supporting youth as they utilize technology\n  <br>to navigate our ever changing world</h2>\n  <br>\n  <a href=\"\">\"JOIN US\"</a>\n</section>";
+  return "\n<section id=\"jumbotron\">\n  <h1>Helping form future tech leaders</h1>\n  <h2>Supporting youth as they utilize technology\n  <br>to navigate our ever changing world</h2>\n  <br>\n  <a href=\"/Join\">\"JOIN US\"</a>\n</section>";
 };
 
 exports.default = _default;
@@ -179,7 +179,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<section id=\"happenings\">\n  <h2>Happenings and Events</h2>\n   <br>\n   <div class=\"robopic\">\n     <img src=\"https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true\">\n   </div>\n   <h3>The Annual Robotics and Technology Exposition</h3>\n   <br>\n    <p>This is Paragon's premier annual showcase and competition event\n   <br>for members and it is open to the entire community.\n   <br>It gives our participants a chance to participate in age-level\n       group competitive robotics events.</p>\n\n   <p>Organization and community youths may also display\n   projects and/or enroll their projects in a build design contest.</p>\n\n   <h4>The Event venue, time and date are to be determined</h4>\n   <div>\n   <p>You can find more examples of our youth\n   <br>activities by clicking the link below:</p>\n   <br>\n   <a href=\"https://www.firstlegoleague.org/\">First Lego League</a>\n   <br>\n   </div>\n</section>";
+  return "\n<section id=\"happenings\">\n  <br>\n   <div class=\"robopic\">\n     <img src=\"https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true\">\n   </div>\n   <h3>The Annual Robotics and Technology Exposition</h3>\n   <br>\n    <p>This is Paragon's premier annual showcase and competition event\n   <br>for members and it is open to the entire community.\n   <br>It gives our participants a chance to participate in age-level\n       group competitive robotics events.</p>\n\n   <p>Organization and community youths may also display\n   projects and/or enroll their projects in a build design contest.</p>\n\n   <h4>The Event venue, time and date are to be determined</h4>\n   <div>\n   <p>You can find more examples of our youth\n   <br>activities by clicking the link below:</p>\n   <br>\n   <a href=\"https://www.firstlegoleague.org/\">First Lego League</a>\n   <br>\n   </div>\n</section>";
 };
 
 exports.default = _default;
@@ -21815,7 +21815,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51302" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51733" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

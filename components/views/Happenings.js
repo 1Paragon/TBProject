@@ -1,7 +1,6 @@
 export default () => `
 <section id="happenings">
-  <h2>Happenings and Events</h2>
-   <br>
+  <br>
    <div class="robopic">
      <img src="https://github.com/1Paragon/TBProject/blob/master/Photos/robots4a.jpg?raw=true">
    </div>
