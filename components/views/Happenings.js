@@ -18,7 +18,7 @@ export default () => `
    <h4>The Event venue, time and date are to be determined</h4>
    <div>
    <p>You can find more examples of our youth
-   <br>activities by clicking the links below:</p>
+   <br>activities by clicking the link below:</p>
    <br>
    <a href="https://www.firstlegoleague.org/">First Lego League</a>
    <br>
