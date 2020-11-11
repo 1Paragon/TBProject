@@ -110,3 +110,7 @@ console.log(document.querySelectorAll("ul"));
 // axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
 //   response.data.forEach(post => {
 //     state.Blog.posts.push(post);
+// const Thumbnails = newFunction();
+// function newFunction() {
+// console.log(Thumbnails.length);
+// return Thumbnails;

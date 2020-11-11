@@ -43,7 +43,7 @@ body {
   text-justify: auto;
 }
 #About > path {
-  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/path1.jpg?raw=true");
+  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/path1b.jpg?raw=true");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -74,17 +74,16 @@ body {
 }
 
 form {
-  border: solid 2px black;
+  border: solid 4px black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 1rem;
 }
 form > * {
-  margin: 0.5rem;
+  margin: 0.60rem 0.60rem;
 }
 form > input[type="submit"] {
-  width: 40%;
+  width: 30%;
 }
 
 #Gallery {
@@ -96,7 +95,7 @@ form > input[type="submit"] {
 #Gallery img {
   display: block;
   height: auto;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 #Gallery {
@@ -104,19 +103,20 @@ form > input[type="submit"] {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  border:2px
+  border: 2px solid  rgb(87, 17, 17);
 }
-thumbnails {
+.Thumbnails {
 height: 550px;
 width:550px;
-border:2px grey;
+border: 2px solid grey;
 }
-thumbnails img {
+.Thumbnails > img {
   height: 110px;
   width: 110px;
-  border: 2px grey;
 }
-
+#imageDiv > img {
+   border: 2px solid grey;
+}
 nav {
   display: flex;
   align-items: flex-start;

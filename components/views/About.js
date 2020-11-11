@@ -2,8 +2,8 @@ export default () => `
 <section id="About">
   <br>
 <div class="path">
-  <img src="https://github.com/1Paragon/TBProject/blob/master/Photos/path1.jpg?raw=true">
-  </div>
+  <img src="https://github.com/1Paragon/TBProject/blob/master/Photos/path1b.jpg?raw=true">
+</div>
 
   <h2>Helping to make the pathway to success easier</h2>
   <br>

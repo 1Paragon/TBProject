@@ -1,16 +1,13 @@
 export default () => `
 <section>
-const Thumbnails = newFunction();
-function newFunction() {
-console.log(Thumbnails.length);
-return Thumbnails;
- src="/robo2.jpeg" id="mainImage" />
-   <br />
+
+<img class="Thumbnails" src="https://github.com/1Paragon/TBProject/blob/master/Thumbnails/robo2.jpg?raw=true">
+<br />
 <div id="imageDiv">
-  <img class="Thumbnails img" src="/Thumbnails/robo3a.jpeg" />
-  <img class="Thumbnails img" src="/Thumbnails/robo4.jpeg" />
-  <img class="Thumbnails img" src="/Thumbnails/robo5a.jpeg" />
-  <img class="Thumbnails img" src="/Thumbnails/robo6.jpeg" />
+<img class="Thumbnails img" src="https://github.com/1Paragon/TBProject/blob/master/Thumbnails/robo3a.jpg?raw=true">
+<img class="Thumbnails img" src="https://github.com/1Paragon/TBProject/blob/master/Thumbnails/robo4.jpg?raw=true">
+<img class="Thumbnails img" src="https://github.com/1Paragon/TBProject/blob/master/Thumbnails/robo5a.jpg?raw=true">
+<img class="Thumbnails img" src="https://github.com/1Paragon/TBProject/blob/master/Thumbnails/robo6.jpg?raw=true">
 </div>
   </section>
 `;
