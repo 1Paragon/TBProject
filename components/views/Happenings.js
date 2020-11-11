@@ -19,9 +19,8 @@ export default () => `
    <div>
    <p>You can find more examples of our youth
    <br>activities by clicking the links below:</p>
-   <a href="https://youtu.be/9XtUlQULRvA">Lego League Video</a>
-   <br> <br>
+   <br>
    <a href="https://www.firstlegoleague.org/">First Lego League</a>
-   <br><br>
+   <br>
    </div>
 </section>`;
