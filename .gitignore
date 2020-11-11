@@ -1,8 +1,7 @@
 .DS_Store
 .cache
-dist
 node_modules
 *.sw*
+env
 //16d1fa656629237c1603ad5695183145bb1c2429
 //axios.get("https://api.openweathermap.org/data/2.5/weather?q=st%20louis
-//.env

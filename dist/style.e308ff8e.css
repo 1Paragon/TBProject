@@ -1,0 +1,192 @@
+body {
+  background-color: #a3d177;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(4, 31, 73);
+  font-size: 25px;
+  text-align: center;
+}
+
+#title {
+  color: rgb(80, 29, 29);
+}
+
+#main {
+  font-size: 20px;
+  background-color: rgb(174, 214, 174);
+  color: rgb(11, 98, 4);
+  background-size: cover;
+  height: 90vh;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 1rem;
+  border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+  @media (max-width: 549px){
+    .hidden--mobile {
+      display: none !important;
+    }
+}
+@media (min-width: 550px) {
+  #jumbotron {
+    height: 80vh;
+  }
+}
+
+#About {
+  font-weight: bold;
+  align-content: center;
+  text-justify: auto;
+}
+#About > path {
+  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/path1b.jpg?raw=true");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+#jumbotron {
+  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/riveredge1e%20.jpg?raw=true");
+  opacity: 75%;
+}
+#jumbotron > h2 {
+  color: rgb(18, 56, 126);
+  text-align: center;
+}
+#jumbotron > a {
+  text-decoration: none;
+  background-color: rgb(91, 188, 206);
+  font-size: 2em;
+  padding: 1rem;
+  border-radius: 10px;
+}
+#Happenings > .robopic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  border: solid 4px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form > * {
+  margin: 0.60rem 0.60rem;
+}
+form > input[type="submit"] {
+  width: 30%;
+}
+
+#Gallery {
+  clear: both;
+}
+#Gallery > * {
+  padding: 0.5rem;
+}
+#Gallery img {
+  display: block;
+  height: auto;
+  width: 50%;
+  margin: auto;
+}
+#Gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 2px solid  rgb(87, 17, 17);
+}
+.Thumbnails {
+height: 550px;
+width:550px;
+border: 2px solid grey;
+}
+.Thumbnails > img {
+  height: 110px;
+  width: 110px;
+}
+#imageDiv > img {
+   border: 2px solid grey;
+}
+nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+nav > i {
+  padding: 1rem;
+  font-size: 2em;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0;
+  justify-content: space-evenly;
+}
+nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+}
+
+nav > .fa-bars {
+  display: none;
+}
+
+#Join > .myButton {
+  background-color: #c9c3af;
+  border-radius: 16px;
+  border: 3px solid #d67724;
+  display: inline-block;
+  cursor: pointer;
+  color: #2d380a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+#Join > .myButton:hover {
+  background-color: #353126;
+}
+#Join > .myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#bio {
+  margin: 1rem;
+  margin-right: 3rem;
+}
+#bio img {
+  float: left;
+  width: 40%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+footer {
+  border-top: solid 3px black;
+  padding: 2rem 2rem 4rem;
+  margin: 1rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
