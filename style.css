@@ -1,7 +1,7 @@
 body {
   background-color: #a3d177;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(4, 31, 73);
+  color: rgb(4, 9, 73);
   font-size: 25px;
   text-align: center;
 }
@@ -53,9 +53,10 @@ body {
 }
 
 #jumbotron {
-  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/riveredge2.jpg?raw=true");
-  opacity: 0.5;
+  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/river1.jpg?raw=true");
+  opacity: 80%;
 }
+
 #jumbotron > h2 {
   color: white;
   text-align: center;
@@ -80,7 +81,7 @@ form {
   align-items: center;
 }
 form > * {
-  margin: 0.60rem 0.60rem;
+  margin: 0.6rem 0.6rem;
 }
 form > input[type="submit"] {
   width: 30%;
