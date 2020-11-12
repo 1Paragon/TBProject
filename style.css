@@ -53,12 +53,11 @@ body {
 }
 
 #jumbotron {
-  background-image: url
-
+  background-image: url("https://github.com/1Paragon/TBProject/blob/master/Photos/riveredge2.jpg?raw=true");
   opacity: 0.5;
 }
 #jumbotron > h2 {
-  color: rgb(18, 56, 126);
+  color: white;
   text-align: center;
 }
 #jumbotron > a {
