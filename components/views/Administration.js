@@ -1,5 +1,4 @@
 export default () => `
-<h1>Fundraising</h1>
 <form id="register" method="POST" action="">
     <div>
       <label for="username">Username:</label>
