@@ -33,7 +33,7 @@ body {
 }
 @media (min-width: 550px) {
   #jumbotron {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -109,14 +109,14 @@ form > input[type="submit"] {
 .Thumbnails {
 height: 550px;
 width:550px;
-border: 2px solid grey;
+border: 3px solid rgb(67, 45, 128);
 }
 .Thumbnails > img {
   height: 110px;
   width: 110px;
 }
 #imageDiv > img {
-   border: 2px solid grey;
+ border: 3px solid rgb(67, 45, 128);
 }
 nav {
   display: flex;
